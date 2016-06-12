@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0">
+  <name>com_jshopping_zarinpal</name>
+  <creationDate>June 2016</creationDate>
+  <author>Mohsen Ranjbar (mimrahe)</author>
+  <authorEmail>mimrahe@gmail.com</authorEmail>
+  <authorUrl>http://mimrahe.com</authorUrl>
+  <copyright>2016 Zarinpal.com</copyright>
+  <version>1.0</version>
+  <description>COM_JSHOPPING_ZARINPAL_DESC</description>
+  <install>
+    <sql>
+      <file driver="mysql" charset="utf8">install/sql/mysql/install.utf8.sql</file>
+    </sql>
+  </install>
+  <uninstall>
+    <sql>
+      <file driver="mysql" charset="utf8">install/sql/mysql/uninstall.utf8.sql</file>
+    </sql>
+  </uninstall>
+  <administration>
+    <menu>COM_JSHOPPING_ZARINPAL</menu>
+    <submenu>
+      <menu link="option=com_jshopping_zarinpal&amp;view=transactionList">COM_JSHOPPING_ZARINPAL_TRANSACTIONS_LIST</menu>
+    </submenu>
+    <files folder="admin">
+      <folder>install</folder>
+      <filename>jshopping_zarinpal.php</filename>
+    </files>
+    <languages folder="admin/language">
+      <language tag="fa-IR">fa-IR.com_jshopping_zarinpal.ini</language>
+      <language tag="fa-IR">fa-IR.com_jshopping_zarinpal.sys.ini</language>
+    </languages>
+  </administration>
+  <params/>
+</extension>

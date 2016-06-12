@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="file" version="3.0" client="site" method="upgrade"	>
+    <name>pm_zarinpal</name>
+	<creationDate>June 2016</creationDate>
+    <author>Mohsen Ranjbar (mimrahe)</author>
+    <copyright>2016 Zarinpal.com</copyright>
+    <license>http://www.gnu.org/licenses GNU/GPL</license>
+    <authorUrl>http://mimrahe.com</authorUrl>
+    <authorEmail>mimrahe@gmail.com</authorEmail>
+    <version>2.0</version>
+    <description>Zarinpal Joomshopping Payment Files</description>
+	<fileset>
+		<files folder="site" target="components/com_jshopping/payments">
+			<folder>pm_zarinpal</folder>
+		</files>
+	</fileset>
+</extension>
